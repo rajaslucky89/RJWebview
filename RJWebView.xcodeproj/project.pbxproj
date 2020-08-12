@@ -10,6 +10,8 @@
 		4A49B61A24E3EA6C00623763 /* RJWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A49B61024E3EA6C00623763 /* RJWebView.framework */; };
 		4A49B61F24E3EA6C00623763 /* RJWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49B61E24E3EA6C00623763 /* RJWebViewTests.swift */; };
 		4A49B62124E3EA6C00623763 /* RJWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A49B61324E3EA6C00623763 /* RJWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A49B62C24E3EAF100623763 /* RJWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49B62A24E3EAF100623763 /* RJWebViewController.swift */; };
+		4A49B62D24E3EAF100623763 /* RJWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A49B62B24E3EAF100623763 /* RJWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		4A49B61924E3EA6C00623763 /* RJWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A49B61E24E3EA6C00623763 /* RJWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJWebViewTests.swift; sourceTree = "<group>"; };
 		4A49B62024E3EA6C00623763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A49B62A24E3EAF100623763 /* RJWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJWebViewController.swift; sourceTree = "<group>"; };
+		4A49B62B24E3EAF100623763 /* RJWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				4A49B61324E3EA6C00623763 /* RJWebView.h */,
 				4A49B61424E3EA6C00623763 /* Info.plist */,
+				4A49B62A24E3EAF100623763 /* RJWebViewController.swift */,
+				4A49B62B24E3EAF100623763 /* RJWebViewController.xib */,
 			);
 			path = RJWebView;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					4A49B60F24E3EA6C00623763 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					4A49B61824E3EA6C00623763 = {
 						CreatedOnToolsVersion = 11.5;
@@ -178,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A49B62D24E3EAF100623763 /* RJWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A49B62C24E3EAF100623763 /* RJWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		4A49B62524E3EA6C00623763 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MG5EZ748K3;
@@ -356,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.raja.RJWebView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +375,7 @@
 		4A49B62624E3EA6C00623763 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MG5EZ748K3;
@@ -388,6 +400,7 @@
 		4A49B62824E3EA6C00623763 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG5EZ748K3;
 				INFOPLIST_FILE = RJWebViewTests/Info.plist;
@@ -406,6 +419,7 @@
 		4A49B62924E3EA6C00623763 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG5EZ748K3;
 				INFOPLIST_FILE = RJWebViewTests/Info.plist;
