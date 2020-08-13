@@ -66,6 +66,7 @@ spec.swift_version = "4.2"
 
 spec.source       = { :git => "https://github.com/rajaslucky89/RJWebview.git", :tag => "#{spec.version}" }
 spec.source_files  = "RJWebView/**/*.{h,m,swift}"
+spec.exclude_files = "RJWebView/*.plist"
 #spec.source_files = 'RJWebView/Classes/**/*'
 
 # spec.platform     = :ios
@@ -76,21 +77,6 @@ spec.source_files  = "RJWebView/**/*.{h,m,swift}"
 # spec.osx.deployment_target = "10.7"
 # spec.watchos.deployment_target = "2.0"
 # spec.tvos.deployment_target = "9.0"
-
-
-# ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  CocoaPods is smart about how it includes source code. For source files
-#  giving a folder will include any swift, h, m, mm, c & cpp files.
-#  For header files it will include any header in the folder.
-#  Not including the public_header_files will make all headers public.
-#
-
-#spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-#spec.exclude_files = "Classes/Exclude"
-
-# spec.public_header_files = "Classes/**/*.h"
-
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
