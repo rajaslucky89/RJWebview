@@ -65,7 +65,8 @@ spec.ios.deployment_target = "10.1"
 spec.swift_version = "4.2"
 
 spec.source       = { :git => "https://github.com/rajaslucky89/RJWebview.git", :tag => "#{spec.version}" }
-spec.source_files  = "RJWebView/**/*.{h,m,swift}"
+#spec.source_files  = "RJWebView/**/*.{h,m,swift}"
+spec.source_files = 'RJWebView/Classes/**/*'
 
 # spec.platform     = :ios
 # spec.platform     = :ios, "5.0"
