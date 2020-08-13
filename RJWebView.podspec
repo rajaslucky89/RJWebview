@@ -39,8 +39,8 @@ spec.homepage     = "https://github.com/rajaslucky89/RJWebview.git"
 #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
 #
 
-#spec.license      = "MIT (example)"
-spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+spec.license      = "Copyright"
+#spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -86,8 +86,8 @@ spec.source_files  = "RJWebView/**/*.{h,m,swift}"
 #  Not including the public_header_files will make all headers public.
 #
 
-spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-spec.exclude_files = "Classes/Exclude"
+#spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+#spec.exclude_files = "Classes/Exclude"
 
 # spec.public_header_files = "Classes/**/*.h"
 
