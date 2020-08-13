@@ -28,9 +28,8 @@ spec.description  = <<-DESC
  A much longer description of MyFramework
 DESC
 
-spec.homepage     = "https://github.com/rajaslucky89/RJWebview.git"
+spec.homepage     = "https://github.com/rajaslucky89/RJWebview"
 # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
