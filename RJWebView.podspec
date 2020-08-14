@@ -16,14 +16,8 @@ Pod::Spec.new do |spec|
 #
 
 spec.name         = "RJWebView"
-spec.version      = "0.0.1"
+spec.version      = "0.0.3"
 spec.summary      = "A RJWebView written in Swift for iOS"
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 spec.description  = <<-DESC
  A much longer description of MyFramework
 DESC
@@ -31,89 +25,29 @@ DESC
 spec.homepage     = "https://github.com/rajaslucky89/RJWebview"
 # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-# ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  Licensing your code is important. See https://choosealicense.com for more info.
-#  CocoaPods will detect a license file if there is a named LICENSE*
-#  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-#
-
 #spec.license      = "Copyright"
-spec.license      = { :type => "MIT", :file => "LICENSE" }
-
-
-# ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  Specify the authors of the library, with email addresses. Email addresses
-#  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-#  accepts just a name if you'd rather not provide an email address.
-#
-#  Specify a social_media_url where others can refer to, for example a twitter
-#  profile URL.
-#
+spec.license      = { :type => "Copyright", :text => "LICENSE" }
 
 spec.author             = { "Raja Syahmudin" => "rajaslucky89@gmail.com" }
 #spec.social_media_url   = "https://id.linkedin.com/in/raja-syahmudin-harahap-8b125849"
 
-# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  If this Pod runs only on iOS or OS X, then specify the platform and
-#  the deployment target. You can optionally include the target after the platform.
-#
-
-spec.ios.deployment_target = "10.1"
+spec.platform     = :ios
+spec.ios.deployment_target = "12.1"
 spec.swift_version = "4.2"
 
 spec.source       = { :git => "https://github.com/rajaslucky89/RJWebview.git", :tag => "#{spec.version}" }
-spec.source_files  = "RJWebView/**/*.{h,m,swift}"
-spec.exclude_files = "RJWebView/*.plist"
-#spec.source_files = 'RJWebView/Classes/**/*'
+#spec.source_files  = "RJWebView/Classes/**/*.{h,m,swift,xib}"
+spec.exclude_files = "RJWebView/Classes/*.plist"
 
-# spec.platform     = :ios
-# spec.platform     = :ios, "5.0"
-
-#  When using multiple platforms
-# spec.ios.deployment_target = "5.0"
-# spec.osx.deployment_target = "10.7"
-# spec.watchos.deployment_target = "2.0"
-# spec.tvos.deployment_target = "9.0"
-
-# ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  A list of resources included with the Pod. These are copied into the
-#  target bundle with a build phase script. Anything else will be cleaned.
-#  You can preserve files from being cleaned, please don't preserve
-#  non-essential files like tests, examples and documentation.
-#
-
-# spec.resource  = "icon.png"
-# spec.resources = "Resources/*.png"
-
-# spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-# ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  Link your library with frameworks, or libraries. Libraries do not include
-#  the lib prefix of their name.
-#
-
-# spec.framework  = "SomeFramework"
-# spec.frameworks = "SomeFramework", "AnotherFramework"
-
-# spec.library   = "iconv"
-# spec.libraries = "iconv", "xml2"
-
-
-# ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-#  If your library depends on compiler flags you can set them in the xcconfig hash
-#  where they will only apply to your library. If you depend on other Podspecs
-#  you can include multiple dependencies to ensure it works.
-
-# spec.requires_arc = true
+spec.source_files = "RJWebView/Classes/**/*"
+spec.resource_bundles = {
+  'RJWebView' => ["RJWebView/Classes/**/*.{storyboard,xib}"]
+}
+ 
+#spec.requires_arc = true
 
 # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 # spec.dependency "JSONKit", "~> 1.4"
+
 
 end

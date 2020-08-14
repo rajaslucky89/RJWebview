@@ -6,7 +6,7 @@
 //  Copyright © 2020 RJWebView. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for RJWebView.
 FOUNDATION_EXPORT double RJWebViewVersionNumber;
