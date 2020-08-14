@@ -4,7 +4,7 @@ A RJWebView written in Swift for iOS
 ### Installation ###
 RJWebView is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
-* pod RJWebView
+* Add pod 'RJWebView',  :git => 'https://github.com/rajaslucky89/RJWebview', :tag => '0.0.3'
 * Run pod install
 
 ### Author ###

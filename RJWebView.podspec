@@ -36,16 +36,11 @@ spec.ios.deployment_target = "12.1"
 spec.swift_version = "4.2"
 
 spec.source       = { :git => "https://github.com/rajaslucky89/RJWebview.git", :tag => "#{spec.version}" }
-#spec.source_files  = "RJWebView/Classes/**/*.{h,m,swift,xib}"
-spec.exclude_files = "RJWebView/Classes/*.plist"
-
-spec.source_files = "RJWebView/Classes/**/*"
-spec.resource_bundles = {
-  'RJWebView' => ["RJWebView/Classes/**/*.{storyboard,xib}"]
-}
+#spec.source_files  = "RJWebView/Classes/**/*.{h,m,swift}"
+#spec.exclude_files = "RJWebView/Classes/*.plist"
+spec.resources = "RJWebView/**/*.xib"
  
 #spec.requires_arc = true
-
 # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 # spec.dependency "JSONKit", "~> 1.4"
 
