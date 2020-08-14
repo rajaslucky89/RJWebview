@@ -17,10 +17,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapOpenWebView(_ sender: UIButton) {
-//        let webViewURL = "https://id.linkedin.com/in/raja-syahmudin-harahap-8b125849"
-//        let vc = RJWebViewController.loadWebViewWith(title: "Linkedin", urlString: webViewURL)
-//        self.navigationController?.pushViewController(vc, animated: true)
-        
+        let webViewURL = "https://id.linkedin.com/in/raja-syahmudin-harahap-8b125849"
+        let vc = RJWebView.loadWebViewWith(title: "Linkedin", urlString: webViewURL)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  RJWebViewController.swift
+//  RJWebView.swift
 //  RJWebView
 //
 //  Created by Raja Syahmudin on 12/08/20.
@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-public class RJWebViewController: UIViewController {
+public class RJWebView: UIViewController {
     
     // IBOutlet
     @IBOutlet weak var closeButton: UIButton!
@@ -62,15 +62,16 @@ public class RJWebViewController: UIViewController {
         
     }
     
-    public class func loadWebViewWith(title: String? = nil, urlString: String?) -> RJWebViewController {
-        let webBrowserViewController = RJWebViewController(nibName: "RJWebViewController", bundle: Bundle.main)
+    public class func loadWebViewWith(title: String? = nil, urlString: String?) -> RJWebView {
+        let webBrowserViewController = RJWebView(nibName: "RJWebView", bundle: Bundle.main)
         webBrowserViewController.urlString = urlString
         webBrowserViewController.navigationTitle = title
         return webBrowserViewController
     }
+
 }
 
-extension RJWebViewController: WKNavigationDelegate {
+extension RJWebView: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         activityIndicator.startAnimating()
     }
